@@ -1,0 +1,6 @@
+@startuml
+class Guerrero {
+  - fuerza : int
+  + atacar()
+}
+@enduml
