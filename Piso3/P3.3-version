@@ -1,0 +1,7 @@
+@startuml
+actor Usuario
+participant Sistema
+
+Usuario -> Sistema : iniciarSesion()
+Sistema --> Usuario : accesoConcedido
+@enduml
