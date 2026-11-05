@@ -1,0 +1,11 @@
+@startuml
+package usuarios {
+  class Usuario
+}
+
+package compras {
+  class Pedido
+}
+
+compras ..> usuarios
+@enduml
