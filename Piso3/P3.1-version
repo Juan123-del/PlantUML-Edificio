@@ -1,0 +1,6 @@
+@startuml
+[*] --> Activo
+Activo --> Inactivo : desactivar
+Inactivo --> Activo : activar
+Inactivo --> [*]
+@enduml
