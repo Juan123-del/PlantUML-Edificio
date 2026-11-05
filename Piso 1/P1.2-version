@@ -1,0 +1,5 @@
+@startuml
+usecase "Finalizar Partida" as UC2
+usecase "Guardar Partida" as V
+UC2 .> V : <<include>>
+@enduml
