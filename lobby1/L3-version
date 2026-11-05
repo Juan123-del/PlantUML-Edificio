@@ -1,0 +1,6 @@
+@startuml
+class Personaje
+note right of Personaje
+  fuerza > 0
+end note
+@enduml
