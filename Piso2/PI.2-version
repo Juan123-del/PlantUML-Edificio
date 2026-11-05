@@ -1,0 +1,6 @@
+@startuml
+class Guerrero
+class Inventario
+
+Guerrero *-- Inventario
+@enduml
