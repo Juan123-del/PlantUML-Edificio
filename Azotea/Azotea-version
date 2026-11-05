@@ -1,0 +1,10 @@
+@startuml
+actor Jugador
+participant Arena
+participant Guerrero
+
+Jugador -> Arena : iniciarCombate()
+Arena -> Guerrero : atacar()
+Guerrero --> Arena : dano = 40
+Arena --> Jugador : victoria
+@enduml
