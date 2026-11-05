@@ -1,0 +1,11 @@
+@startuml
+[*] --> Conectado
+
+state "Conectado" {
+  [*] --> Activo
+  Activo --> Pausado : pausar
+  Pausado --> Activo : reanudar
+}
+
+Conectado --> [*] : desconectar
+@enduml
