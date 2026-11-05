@@ -1,0 +1,13 @@
+@startuml
+object "legolas : Guerrero" as g {
+  nombre = "Legolas"
+  vida = 100
+}
+
+object "arco : Item" as i {
+  nombre = "Arco"
+  daño = 50
+}
+
+g --> i
+@enduml
