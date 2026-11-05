@@ -1,0 +1,10 @@
+@startuml
+!theme cerulean
+class Guerrero {
+  - fuerza : int
+}
+
+class Mago {
+  - mana : int
+}
+@enduml
