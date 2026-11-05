@@ -1,0 +1,15 @@
+@startuml
+!include <C4/C4_Container>
+
+Person(jugador, "Jugador")
+
+System_Boundary(rpg, "RPG Combat Manager") {
+  Container(app, "Gestor de personajes", "Python")
+  Container(engine, "Motor de combate", "Python")
+  ContainerDb(db, "Base de datos RPG", "MariaDB")
+}
+
+Rel(jugador, app, "Gestiona personajes")
+Rel(app, engine, "Inicia combates")
+Rel(engine, db, "Consulta habilidades y vidas")
+@enduml
