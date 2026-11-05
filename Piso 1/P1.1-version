@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+actor Jugador
+rectangle "RPG Manager" {
+  usecase "Crear personaje" as UC1
+  usecase "Iniciar combate" as UC2
+  usecase "Guardar partida" as UC3
+}
+Jugador --> UC1
+Jugador --> UC2
+Jugador --> UC3
+@enduml
