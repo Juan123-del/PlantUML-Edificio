@@ -1,0 +1,18 @@
+@startuml
+entity Guerrero {
+  * id : INT <<PK>>
+  --
+  nombre : VARCHAR(50)
+  nivel : INT
+}
+
+entity Habilidad {
+  * id : INT <<PK>>
+  --
+  guerrero_id : INT <<FK>>
+  nombre : VARCHAR(50)
+  dano : INT
+}
+
+Guerrero ||--o{ Habilidad
+@enduml
