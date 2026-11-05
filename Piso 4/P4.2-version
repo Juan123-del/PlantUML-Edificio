@@ -1,0 +1,13 @@
+@startuml
+node "PC del jugador" {
+  artifact "RPGManager.exe" as APP
+}
+
+node "Servidor de combate" {
+  artifact "CombatEngine.jar" as ENGINE
+  database "RPG_DB" as DB
+}
+
+APP --> ENGINE : Solicitar combate
+ENGINE --> DB : Consultar personajes
+@enduml
